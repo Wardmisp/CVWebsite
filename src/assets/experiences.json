@@ -1,0 +1,106 @@
+[
+  {
+    "poste": "Ingénieur logiciel",
+    "entreprise": "Visioglobe",
+    "date": "oct. 2022 - déc. 2025",
+    "lieu": "Montbonnot-Saint-Martin, Auvergne-Rhône-Alpes, France",
+    "type": "CDI",
+    "description": [
+      "Refactorisation complète d'une bibliothèque Android en Clean Architecture, utilisée par des clients mondiaux (ex: Aéroports, Centre Commerciaux...).",
+      "Correction de bugs critiques et support technique pour les équipes clientes, avec une approche orientée qualité et performance.",
+      "Developpement et maintenance d'applications mobiles Android et iOS, en utilisant les meilleures pratiques de développement mobile et en assurant une expérience utilisateur fluide.",
+      "Collaboration avec les équipes produit pour intégrer de nouvelles fonctionnalités tout en respectant les contraintes techniques et les bonnes pratiques Agile.",
+      "Developpement complet d'un chatbot interne pour améliorer la communication et la gestion des connaissances au sein de l'entreprise, en utilisant les technologies RAG, Ollama et Langchain.",
+      "Developpement d'une librairie React Native pour permettre à nos clients d'intégrer facilement notre solution de navigation indoor dans leurs applications mobiles, en assurant une compatibilité multiplateforme et une expérience utilisateur optimale."
+    ],
+    "technos": ["Git", "Kotlin", "Java", "Clean Architecture", "Android Studio", "Agile","Xcode","Swift","iOS","Python","RAG","ollama","Langchain","React Native"],
+    "lien": "https://www.visioglobe.com"
+  },
+  {
+    "poste": "Ingénieur consultant",
+    "entreprise": "ALTEN/MBDA",
+    "date": "nov. 2021 - août 2022",
+    "lieu": "Boulogne-Billancourt, Île-de-France, France",
+    "type": "CDI",
+    "description": [
+      "Mission de test sur logiciel et base de données.",
+      "Test fonctionnel et requete SQL pour la validation de données."
+    ],
+    "technos": ["SQL"],
+    "lien": "https://www.mbda-systems.com/"
+  },
+  {
+    "poste": "Développeur VR",
+    "entreprise": "Alten Labs",
+    "date": "avr. 2021 - oct. 2021",
+    "lieu": "Sèvres, Île-de-France, France",
+    "type": "Stage",
+    "description": [
+      "Développement d'un mot de passe adapté à la réalité virtuelle.",
+      "Plateforme : Oculus Quest 2.",
+      "Logiciels : Unreal Engine.",
+      "Langages : C++, Blueprint."
+    ],
+    "technos": ["Unreal Engine", "C++", "Blueprint", "Git"],
+    "lien": "https://www.alten.com/fr/alten-labs-la-fabrique-de-projets-innovants/"
+  },
+  {
+    "poste": "Étudiant ingénieur",
+    "entreprise": "ECE Paris",
+    "date": "sept. 2018 - nov. 2021",
+    "lieu": "Région de Paris, France",
+    "type": "Formation",
+    "description": [
+      "Formation en ingénierie avec spécialisation en Big Data & Analytics.",
+      "Projet de detection de maladie sur des images de plans de tomates en utilisant des techniques de machine learning (random forest, SVM, KNN).",
+      "Génération d'une vue d'oiseau & segmentation de l'image à partir de caméra placer sur une voiture autonome en utilisant des techniques de computer vision.",
+      "Création d'un site web factice de ventes d'objets en ligne avec un design responsive et une base de données MySQL."
+    ],
+    "technos": ["Git", "Python", "Scikit-learn", "OpenCV", "Jupyter Notebook", "SQL", "TensorFlow","Pytorch","Php","HTML","CSS"],
+    "lien": "https://www.ece.fr"
+  },
+  {
+    "poste": "Assistant pédagogique",
+    "entreprise": "Lycée Gustave Eiffel",
+    "date": "déc. 2020 - févr. 2021",
+    "lieu": "Ville de Paris, Île-de-France, France",
+    "type": "Temps partiel",
+    "description": [
+      "Dispenser les cours de mathématiques aux élèves en cas de besoin.",
+      "Aider les élèves à la compréhension du cours."
+    ],
+    "technos": ["pedagogie", "communication","mathematiques"],
+    "lien": "https://pia.ac-paris.fr/serail/jcms/s2_2403487/fr/bienvenue-sur-le-site-du-lycee-gustave-eiffel"
+  },
+  {
+    "poste": "Développeur web",
+    "entreprise": "ExpertAide/Mes-Allocs.fr",
+    "date": "sept. 2020 - nov. 2020",
+    "lieu": "Ville de Paris, Île-de-France, France",
+    "type": "Freelance",
+    "description": [
+      "Développement d'un simulateur regroupant les aides financières majeures sur le territoire français.",
+      "Scraping des aides en ligne puis intégration dans le simulateur."
+    ],
+    "technos": ["JavaScript","Selenium","Python"],
+    "lien": "https://www.mes-allocs.fr/",
+    "projet": {
+      "nom": "Simulateur Aides Financières | Mes-Allocs.fr",
+      "description": "Retrouvez toutes les aides financières auxquelles vous avez droit peu importe votre situation grâce à la simulation de Mes-Allocs.fr",
+      "lien": "https://www.mes-allocs.fr/simulation-aides?origin=home"
+    }
+  },
+  {
+    "poste": "Développeur web",
+    "entreprise": "Stage",
+    "date": "juil. 2020 - sept. 2020",
+    "lieu": "Ville de Paris, Île-de-France, France",
+    "type": "Stage",
+    "description": [
+      "Développement d'un simulateur regroupant les aides financières majeures sur le territoire français.",
+      "Donne suite à un passage en Freelance chez Mes-Allocs.fr à partir de septembre 2020."
+    ],
+    "technos": ["JavaScript","Selenium","Python"],
+    "lien": "https://www.mes-allocs.fr/"
+  }
+]

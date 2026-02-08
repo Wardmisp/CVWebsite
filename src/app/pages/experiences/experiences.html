@@ -1,0 +1,47 @@
+<div class="experiences-container">
+  <h1>Mes Expériences Professionnelles</h1>
+
+  <!-- Barre de recherche -->
+  <div class="search-bar">
+    <input type="text" [(ngModel)]="searchQuery" (input)="onSearch()" placeholder="Rechercher...">
+    <button class="toggle-filter-btn" (click)="toggleFilter()">
+      {{ showFilter ? 'Masquer les filtres' : 'Afficher les filtres' }} <i class="filter-icon">{{ showFilter ? '▲' : '▼' }}</i>
+    </button>
+  </div>
+
+  <!-- Filtre par technologie (affiché/masqué) -->
+  <div class="tech-filter" [class.hidden]="!showFilter">
+    <button class="filter-btn" (click)="filterByTech('')" [class.active]="!selectedTech">
+      <i class="devicon-all-plain"></i> Toutes
+    </button>
+    <button class="filter-btn" *ngFor="let tech of getUniqueTechnos()" (click)="filterByTech(tech)" [class.active]="selectedTech === tech">
+      <i [class]="getTechIcon(tech)" [title]="tech"></i> {{ tech }}
+    </button>
+  </div>
+
+  <!-- Nombre d'expériences affichées -->
+  <div class="experience-count">
+    {{ filteredExperiences.length }} expérience{{ filteredExperiences.length > 1 ? 's' : '' }} affichée{{ filteredExperiences.length > 1 ? 's' : '' }}
+  </div>
+
+  <!-- Liste des expériences -->
+  <div class="experience-list">
+    <div *ngFor="let experience of filteredExperiences" class="experience-card">
+      <div class="experience-date">{{ experience.date }}</div>
+      <h3>{{ experience.poste }} @ <a [href]="experience.lien" target="_blank">{{ experience.entreprise }}</a></h3>
+      <p>{{ experience.lieu }} <span *ngIf="experience.type">({{ experience.type }})</span></p>
+
+      <div class="experience-description">
+        <ul>
+          <li *ngFor="let desc of experience.description">{{ desc }}</li>
+        </ul>
+      </div>
+
+      <div class="technos">
+        <span *ngFor="let tech of experience.technos" class="tech">
+          <i [class]="getTechIcon(tech)" [title]="tech"></i> {{ tech }}
+        </span>
+      </div>
+    </div>
+  </div>
+</div>

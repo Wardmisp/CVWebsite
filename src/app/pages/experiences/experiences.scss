@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+.experiences-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Roboto', sans-serif;
+
+  h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    font-weight: 500;
+  }
+
+  /* Barre de recherche + bouton filtre */
+  .search-bar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    gap: 10px;
+
+    input {
+      flex: 1;
+      max-width: 400px;
+      padding: 10px 15px;
+      border: 1px solid #ddd;
+      border-radius: 20px;
+      font-size: 1em;
+      transition: border-color 0.3s;
+
+      &:focus {
+        outline: none;
+        border-color: #3498db;
+        box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+      }
+    }
+  }
+
+  /* Bouton pour afficher/masquer le filtre */
+  .toggle-filter-btn {
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: background 0.3s;
+
+    &:hover {
+      background: #2980b9;
+    }
+
+    .filter-icon {
+      margin-left: 5px;
+      font-size: 0.8em;
+    }
+  }
+
+  /* Filtre par technologie (masquable) */
+  .tech-filter {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+    justify-content: center;
+    transition: all 0.3s ease;
+    overflow: hidden;
+
+    &.hidden {
+      max-height: 0;
+      opacity: 0;
+      margin-bottom: 0;
+      padding: 0;
+      pointer-events: none;
+    }
+
+    .filter-btn {
+      display: flex;
+      align-items: center;
+      background: #f8f9fa;
+      border: 1px solid #dee2e6;
+      padding: 8px 12px;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: all 0.3s;
+      font-size: 0.9em;
+
+      &:hover {
+        background: #e9ecef;
+      }
+
+      &.active {
+        background: #3498db;
+        color: white;
+        border-color: #3498db;
+      }
+
+      i {
+        margin-right: 5px;
+        font-size: 1.1em;
+      }
+    }
+  }
+
+  /* Compteur d'expériences */
+  .experience-count {
+    text-align: center;
+    color: #6c757d;
+    margin-bottom: 20px;
+    font-size: 0.9em;
+  }
+
+  /* Liste des expériences avec effet carte */
+  .experience-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  /* Carte d'expérience (effet restauré) */
+  .experience-card {
+    background: white;
+    border-left: 4px solid #3498db;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border-radius: 0 5px 5px 0;
+
+    &:hover {
+      transform: translateX(5px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .experience-date {
+      color: #7f8c8d;
+      font-size: 0.9em;
+      margin-bottom: 5px;
+      display: block;
+    }
+
+    h3 {
+      margin: 0 0 10px 0;
+      color: #2c3e50;
+
+      a {
+        color: inherit;
+        text-decoration: none;
+        transition: color 0.3s;
+
+        &:hover {
+          color: #3498db;
+          text-decoration: underline;
+        }
+      }
+    }
+
+    p {
+      color: #6c757d;
+      margin: 0 0 15px 0;
+      font-size: 0.95em;
+    }
+
+    .experience-description {
+      margin: 15px 0;
+
+      ul {
+        padding-left: 20px;
+        margin: 0;
+        list-style-type: none;
+
+        li {
+          margin-bottom: 8px;
+          color: #34495e;
+          line-height: 1.5;
+          position: relative;
+          padding-left: 15px;
+
+          &::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #3498db;
+          }
+        }
+      }
+    }
+
+    .technos {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 15px;
+      padding-top: 10px;
+      border-top: 1px dashed #eee;
+
+      .tech {
+        display: flex;
+        align-items: center;
+        background: #f8f9fa;
+        color: #495057;
+        padding: 5px 10px;
+        border-radius: 20px;
+        font-size: 0.9em;
+        transition: all 0.2s;
+
+        &:hover {
+          background: #e9ecef;
+          transform: scale(1.05);
+        }
+
+        i {
+          margin-right: 5px;
+          font-size: 1.1em;
+          color: #3498db;
+        }
+      }
+    }
+  }
+}
